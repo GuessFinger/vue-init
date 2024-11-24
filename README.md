@@ -1,35 +1,20 @@
 # frontend-init
 
-This template should help get you started developing with Vue 3 in Vite.
+This template for Max
 
-## Recommended IDE Setup
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
+### 配置
+1. webstorm配置 stylelint eslint  prettier
+2. 如果需要手动检查的话
+```shell
+    # 我记得是这样的
+    npx stylelint xxx
+    npx eslint xxx
+    npx prettier xxx
+    
+    # 手动修复
+    npx stylelint --fix xxx
+    npx eslint --fix xxx
+    npx prettier --write xxx
 ```
 
-### Compile and Hot-Reload for Development
 
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
