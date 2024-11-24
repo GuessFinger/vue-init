@@ -24,7 +24,7 @@ jobs:
         run: npm install --legacy-peer-deps
 
       - name: Run ESLint
-        run: npx eslint . --ext .js,.vue,.ts
+        run: npx eslint "**/*.{js,jsx,ts,vue}"
 
       - name: Run Stylelint
         run: npx stylelint "**/*.{css,scss,vue}"
