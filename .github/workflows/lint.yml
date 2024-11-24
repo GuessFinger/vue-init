@@ -1,0 +1,33 @@
+name: Lint Check
+
+on:
+  pull_request: # 针对 PR 执行
+  push:         # 推送代码时执行
+    branches:
+      - main
+      - develop
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: npm install --legacy-peer-deps
+
+      - name: Run ESLint
+        run: npx eslint . --ext .js,.vue,.ts
+
+      - name: Run Stylelint
+        run: npx stylelint "**/*.{css,scss,vue}"
+
+      - name: Run Prettier
+        run: npx prettier --check "**/*.{css,scss,vue,js,jsx,ts}"
