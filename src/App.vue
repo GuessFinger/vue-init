@@ -1,30 +1,11 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
-</script>
+<script setup></script>
 
 <template>
     <header>
-        <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
-        <div
-            class="wrapper"
-            style="
-                display: flex;
-                width: 500px;
-                height: 600px;
-                color: #b6ff65;
-                accent-color: #b6ff65;
-                background-color: #b6ff65;
-            "
-        >
-            <HelloWorld msg="You did it!" />
-        </div>
+        <h1>hello max!!! come on!!!</h1>
     </header>
 
-    <main>
-        <TheWelcome />
-    </main>
+    <main></main>
 </template>
 
 <style scoped>
